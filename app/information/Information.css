@@ -1,0 +1,85 @@
+/* Reset default margins */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Background Image */
+  .alldata {
+    background-image: url('/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    min-height: 100vh;
+    padding-top: 100px;
+  }
+  
+  /* Main Box */
+  .data {
+    width: 400px;
+    max-width: 90%; /* Important for small screens */
+    margin: auto;
+    min-height: 400px;
+    background-color: aliceblue;
+    border-radius: 15px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Gap between sections */
+  }
+  
+  /* Main Title */
+  .myinfo {
+    font-size: 30px;
+    font-family: '__nextjs-Geist', sans-serif;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  /* Shared Styles */
+  .allsame {
+    font-family: math, sans-serif;
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  
+  /* Info Data (like email, phone etc.) */
+  .nishant {
+    color: gray;
+    background-color: #d1d1ff;
+    padding: 7px 10px;
+    font-size: 18px;
+    border-radius: 6px;
+    margin-top: 5px;
+    word-break: break-word; /* In case text is long on small screens */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .alldata {
+      padding-top: 50px;
+    }
+  
+    .data {
+      padding: 20px;
+      width: 95%;
+      min-height: auto;
+    }
+  
+    .myinfo {
+      font-size: 24px;
+    }
+  
+    .allsame {
+      font-size: 16px;
+      margin-top: 15px;
+    }
+  
+    .nishant {
+      font-size: 16px;
+      padding: 6px 8px;
+    }
+  }
+  
